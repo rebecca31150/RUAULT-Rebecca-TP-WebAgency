@@ -1,7 +1,224 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 97px;
+    
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header img{
+    width: 62px;
+    height: 62px;
+}
+header h1{
+    color: #3491b2;
+    font-size: 28pt;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+header a{
+    text-decoration: none;
+    color: #979797;
+    font-size: 16pt;
+}
+header a:hover{
+    border-top: #4eb1d5 solid 2px;
+}
+
+/*section Containerdiaporama*/
 .Containerdiaporama{
-    background-color: red;
+    background-image:url(/RUAULT-Rebecca-TP-WebAgency/Ressources/diaporama\ 1.png);
+    height: 880px;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding-top: 300px;
+   padding-left: 300px;
+}
+.Containerdiaporama h1{
+    color: white;
+    font-size: 36pt;
+    text-transform: uppercase;
+    width: 700px;
+}
+.Containerdiaporama span{
+    color: #5dadd3; 
+}
+.Containerdiaporama h2{
+    color: white;
+    font-size: 16pt;
+    
+}
+.Containerdiaporama button{
+    background-color: #4eb1d5;
+    width: 126px;
+    height: 47px;
+    border-radius: 3px;
+    color: white;
+    font-size: 18pt;
+    border-style: none;
+}
+
+/*Container nos services*/
+.Containernosservices{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   
+}
+.Containernosservices h1{
+    margin: 0 auto;
+    font-size: 44pt;
+    text-transform: uppercase;
+}
+.Containernosservices p{
+    color: #767676;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+#slider-label{
+    margin: 0 auto;
+}
+.imageettexte{
+    display: flex;
+   align-items: center;
+   height: 688px;
+}
+.article{
+    display: flex;
+}
+.article span{
+    font-weight: bold;
+    font-size: 16pt;
+    color: black;
+}
+.article p{
+    font-size: 16pt;
+}
+.blocarticle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*Containernosprojets*/
+.Containernosprojets{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Containernosprojets h1{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 44pt;
+}
+.Containernosprojets p{
+    color: #767676;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+.Containernosprojets ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    height: 48px;
+    width: 500px;
+    align-items: center;
+    font-size: 16pt;
+    color: #767676;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding-right: 7px;
+}
+.Containernosprojets span{
+    background-color: #5dadd3;
+    padding: 11px;
+    border-radius: 10px;
+    color: white;
+}
+.Containernosprojets div{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.Containernosprojets img{
+    height: 300px;
+}
+
+/*Container conatct*/
+.Containercontact{
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image:url(/RUAULT-Rebecca-TP-WebAgency/Ressources/carte.png);
+    
+}
+.Containercontact form{
+    display: flex;
+    flex-direction: column;
+    background-color: #e8f1f8b6;
+   margin: 0 auto;
+    
+}   
+.Containercontact div{
+    display: flex;
+    flex-direction: column;
+    background-color: #e8f1f2bc;
+    width: 300px;
+    height: 450px;
+    gap: 20px;
+    
+}
+.Containercontact h1{
+    font-size: 32pt;
+    color: #767676;
+}
+.Containercontact p{
+    font-size: 16pt;
+    color: #767676;
+}
+.Containercontact span{
+    font-weight: bolder;
+}
+.Containercontact input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.Containercontact textarea{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.Containercontact .envoyer{
+    color: white;
+    background-color: #4eb1d5;
+    border: none;
+    width: 155px;
+    height: 34px;
+    margin: 0 auto;
+}
+
+/*Footer*/
+footer p{
+    margin: 0 auto;
+    font-size: 16pt;
+    text-align: center;
+    height: 50px;
 }

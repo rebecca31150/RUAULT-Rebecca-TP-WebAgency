@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP WebAgency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!--header navbar-->
 <header>
-<nav>
-    <img src="/Ressources/logo WebAgency.png" alt="logo WebAgency">
-    <h1 class="logo agence">WebAgency</h1>
+    <div>
+    <img src="Ressources/logo WebAgency.png" alt="logo WebAgency">
+    <h1>WebAgency</h1>
+    </div>
+    <nav>  
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="#Container nos services">Services</a></li>
             <li><a href="#Container nos projets">Portfolio</a></li> 
             <li><a href="#Container contact">Contact</a></li> 
         </ul>
-</nav>
+    </nav>
 </header>
 
 <!--Diaporama-->
 <section class="Containerdiaporama">
-<div class="fleche">
+<!--
     <a href="/Ressources/diaporama 1.png">image principale</a>
     <a href="/Ressources/logo WebAgency.png">image suivante</a>
     <a href="/Ressources/diaporama 1.png">image précédente</a>
-</div>
-<div class="titrediaporama">
+
+-->
 <h1><span> WebAgency :</span> l’agence DE tous vos projets !</h1>
 <h2>Vous avez un projet web ? La WebAgency  vous aide à le réaliser</h2>
 <button>Plus d’infos</button>
-</div>
+
 </section>
 
 <!--Nos Services-->
-<section class="Container nos services" id="Container nos services">
+<section class="Containernosservices" id="Container nos services">
     <h1>Nos services</h1>
     <div id="slider-label">50%</div>
 <div class="vol-slider">
@@ -46,33 +49,37 @@
     aria-valuenow="50">
   </a>
 </div>
-<p class="p services">Depuis plusieurs années, la WebAgency vous accompagne dans la définition et la compréhension de vos projets, de la conception graphique et technique au web-marketing</p>
-<div class="image et texte">
-<img src="/Ressources/photo nos services.png" alt="photo du site sur ordinateur">
-<article class="Card">
-<img src="/Ressources/picto ux design.png" alt="picto ux design">
-<p>UX Design <br>
+<p>Depuis plusieurs années, la WebAgency vous accompagne dans la définition et la compréhension de vos projets, de la conception graphique et technique au web-marketing</p>
+<div class="imageettexte">
+<img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/photo nos services.png" alt="photo du site sur ordinateur">
+<div class="blocarticle">
+<article class="article">
+
+<img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/picto ux design.png" alt="picto ux design">
+<p><span> UX Design </span><br>
     Plateformes, Web-applications, Sites transactionnels, E-commerce & Marchants, sites vitrines et médias conçus et pensés pour une utilisation optimale.</p>
 </article>
 
-<article class="Card">
-<img src="/Ressources/picto ul design.png" alt="picto ul design">
-<p>UI Design <br>
+<article class="article">
+<img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/picto ul design.png" alt="picto ul design">
+<p><span> UI Design </span><br>
     Ergonomie et facilité de navigation des interfaces pour sites vitrines, E-commerce, plateformes, Web applications et Sites média...</p>
 </article>
 
-<article class="Card">
-<img src="/Ressources/picto seo.png" alt="picto SEO">
-<p>SEO - Search Engine Optimization <br>
+<article class="article">
+<img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/picto seo.png" alt="picto SEO">
+<p><span> SEO - Search Engine Optimization </span> <br>
     Où l'art d'optimiser la visibilité et le positionnement de sites web par les moteurs de recherche.</p>
 </article>
+</div>
 </div>
 </section>
 
 <!--Nos projets-->
 
-<section class="Container nos projets" id="Container nos projets">
+<section class="Containernosprojets" id="Container nos projets">
     <h1>Nos PROJETS</h1>
+    <div id="slider-label">50%</div>
     <div class="vol-slider">
         <a href="#" id="vol-handle" class="handle" role="slider" aria-labelledby="slider-label"
           aria-valuemin="1"
@@ -80,54 +87,55 @@
           aria-valuenow="50">
         </a>
       </div>
-      <p class="p projets">Voici quelques projets qui ne sont pas le fait du hasard mais le fruit de notre imagination !
+      <p>Voici quelques projets qui ne sont pas le fait du hasard mais le fruit de notre imagination !
         Nous donnons vie à vos idées</p>
-        <nav>
-            <ul class="listnav">
-            <li><a href="#">Tous les travaux</a></li>
-            <li><a href="#">Créatives</a></li>
-            <li><a href="#">Corporate</a></li> 
-            <li><a href="#">Portfolio</a></li> 
+       
+            <ul>
+           <li><span> Tous les travaux </span></li>
+            <li>Créatives</li>
+            <li>Corporate</li> 
+            <li>Portfolio</li> 
             </ul>
-        </nav>
-        <div class="portfolio">
-            <img src="/Ressources/portfolio 1.png" alt="photo site marchand de lunette">
-            <img src="/Ressources/portfolio 2.png" alt="photo dessin lapin rose">
-            <img src="/Ressources/portfolio 3.png" alt="photo site pompadour">
-            <img src="/Ressources/portfolio 4.png" alt="photo avec un make-up d'un bloc">
-            <img src="/Ressources/portfolio 5.png" alt="photo avec un make-up de sac papier">
-            <img src="/Ressources/portfolio 6.png" alt="photo dessin architecture">
-            <img src="/Ressources/portfolio 7.png" alt="photo dessin fusé">
-            <img src="/Ressources/portfolio 8.png" alt="photo présentation de design">
-        </div>
+            <div>
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 1.png" alt="photo site marchand de lunette">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 2.png" alt="photo dessin lapin rose">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 3.png" alt="photo site pompadour">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 4.png" alt="photo avec un make-up d'un bloc">
+            </div>
+            <div>
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 5.png" alt="photo avec un make-up de sac papier">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 6.png" alt="photo dessin architecture">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 7.png" alt="photo dessin fusé">
+            <img src="/RUAULT-Rebecca-TP-WebAgency/Ressources/portfolio 8.png" alt="photo présentation de design">
+            </div>
 </section>
 
 <!--carte et contact-->
-<section class="Container contact" id="Container contact">
-    
+<section class="Containercontact" id="Container contact">
+        <div>
         <h1>Contact Info</h1>
-        <p>WebAgency SAS <br>
+        <p><span> WebAgency SAS </span><br>
             150 rue Nicolas Louis Vauquelin 31100 Toulouse <br>
             Tél. : 05 34 61 26 23</p>
-        <form action="" method="post">
-            <div class="champ">
+        <form action=" method="post">
+            
                 <label for="nom"></label>
                 <input type="text" name="nom" id="nom" placeholder="nom">
-            </div>
-            <div class="champ">
+            
                 <label for="prenom"></label>
                 <input type="text" name="nom" id="nom" placeholder="prenom">
-            </div>
-            <div class="champ">
-                <label for="message"></label>
-                <textarea name="message" id="message" placeholder="sujet "></textarea>
-            </div>
-            <div class="champ">
+            
+            
+                <label for="sujet"></label>
+                <input type="text" name="nom" id="nom" placeholder="sujet">
+            
+           
                 <label for="message"></label>
                 <textarea name="message" id="message" placeholder="Message" ></textarea>
-            </div>
-            <input type="submit" value="envoyer le message">
+           
+            <input type="submit" value="envoyer le message" class="envoyer">
         </form>
+    </div>
 </section>
 <footer>
     <p>Tous droits réservés WebAgency - Design : Némo - Intération RUAULT Rébécca</p>

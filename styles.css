@@ -41,21 +41,73 @@ header a:hover{
 
 /*section Containerdiaporama*/
 .Containerdiaporama{
-    background-image:url(/RUAULT-Rebecca-TP-WebAgency/Ressources/diaporama\ 1.png);
-    height: 880px;
     width: 100%;
    display: flex;
    flex-direction: column;
    gap: 20px;
-   padding-top: 300px;
-   padding-left: 300px;
+}
+.Containerdiaporama img{
+    width: 100%;
+}
+.Containerdiaporama .image1{
+    animation: infinite;
+    animation-duration: 7s;
+    animation-name: image1;
+    box-shadow: rgb(255, 0, 0) 2px 2px 5px;
+}
+.Containerdiaporama .image2{
+    position: absolute;
+    animation:infinite;
+    animation-duration: 7s;
+    animation-name: image2;
+    box-shadow: black 2px 2px 5px;
+}
+.Containerdiaporama .image3{
+    position: absolute;
+    animation: infinite;
+    animation-duration: 7s;
+    animation-name: image3;
+    box-shadow: blueviolet 2px 2px 5px;
+
+}
+@keyframes image1{
+    0%{opacity: 1; }
+    25%{opacity: 0; }
+    50%{opacity: 0; }
+    100%{opacity: 1; }
+   
+}
+@keyframes image2{
+    0%{opacity: 0; }
+    25%{opacity: 1; }
+    50%{opacity: 0; }
+    100%{opacity: 0; }
+   
+}
+@keyframes image3{
+    0%{opacity: 0; }
+    25%{opacity: 0; }
+    50%{opacity: 1; }
+    100%{opacity: 0; }
+   
+}
+
+.Containerdiaporama div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    margin-left: 150px;
+    margin-top: 150px;
 }
 .Containerdiaporama h1{
     color: white;
     font-size: 36pt;
     text-transform: uppercase;
     width: 700px;
+    
 }
+
 .Containerdiaporama span{
     color: #5dadd3; 
 }
@@ -64,6 +116,8 @@ header a:hover{
     font-size: 16pt;
     
 }
+
+
 .Containerdiaporama button{
     background-color: #4eb1d5;
     width: 126px;
@@ -72,7 +126,9 @@ header a:hover{
     color: white;
     font-size: 18pt;
     border-style: none;
+    
 }
+
 
 /*Container nos services*/
 .Containernosservices{
@@ -161,29 +217,42 @@ header a:hover{
     height: 300px;
 }
 
-/*Container conatct*/
+/*Container contact*/
 .Containercontact{
-    height: 600px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image:url(/RUAULT-Rebecca-TP-WebAgency/Ressources/carte.png);
-    
+    display: flex;
+flex-direction: column;
 }
+.Containercontact img{
+    object-fit:contain;
+}
+block{
+    background-color: #b8e0ee;
+    width: 100%;
+    height:550px;
+    filter: opacity(0.5);
+    position: absolute;
+    margin-top: 20px;
+}
+
+
 .Containercontact form{
     display: flex;
     flex-direction: column;
     background-color: #e8f1f8b6;
-   margin: 0 auto;
-    
-}   
+   margin: 0 auto; 
+   justify-items: center;
+} 
+ 
 .Containercontact div{
     display: flex;
     flex-direction: column;
     background-color: #e8f1f2bc;
     width: 300px;
-    height: 450px;
+    height: 420px;
     gap: 20px;
-    
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 1400px;
 }
 .Containercontact h1{
     font-size: 32pt;
@@ -221,4 +290,134 @@ footer p{
     font-size: 16pt;
     text-align: center;
     height: 50px;
+}
+
+@media screen and (max-width : 767px){
+header{
+    height: 100px;
+}
+header div{
+   margin-left: 30px;
+}
+header div h1{
+    font-size: 12pt;
+}
+header ul{
+    flex-direction: column;
+    gap:0px
+}
+header li{
+   display: none;
+}
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #767676;
+    margin: 6px 0;
+}
+  
+.image1, .image2, .image3 {
+   margin-top: 200px;
+}
+
+.Containerdiaporama div{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.Containerdiaporama h1{
+    color: #767676;
+   font-size: 28pt;
+   width: 500px;
+}
+.Containerdiaporama h2{
+    color: #767676;
+    width: 450px;
+}
+.Containerdiaporama button{
+ margin-left: 450px;
+ margin-top: -50px;
+}
+.Containernosservices{
+   height: 1000px;
+}
+.Containernosservices h1{
+    font-size: 25pt;
+}
+.Containernosservices p{
+    text-align: center;
+}
+.Containernosservices .imageettexte{
+display: flex;
+flex-direction: column;
+}
+.imageettexte img{
+    width: 100%;
+}
+.blocarticle img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.blocarticle p{
+    text-align: left;
+    width: 80%;
+}
+.Containernosprojets{
+    margin: 0 auto;
+}
+.Containernosprojets h1{
+    font-size: 25pt;
+}
+.Containernosprojets{
+    display: flex;
+    flex-direction: column;
+  
+}
+.Containernosprojets p{
+    text-align: center;
+    width: 90%;
+}
+.Containernosprojets div{
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+}
+.Containercontact{
+    height: 600px;
+}
+
+.Containercontact img{
+  width: 100%;
+   margin:0 auto;
+}
+.Containercontact block{
+    height: 600px;
+    margin: 0 auto;
+   
+}
+.Containercontact div{
+   margin: 0 auto;
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.Containercontact input{
+    width: 200px;
+}
+.Containercontact textarea{
+    width: 200px;
+}
+footer p{
+    width: 300px;
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:1850px) {
+.Containerdiaporama div{
+    margin: 0 auto;
+}
 }

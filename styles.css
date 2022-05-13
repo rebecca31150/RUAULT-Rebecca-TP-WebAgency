@@ -292,6 +292,49 @@ footer p{
     height: 50px;
 }
 
+@media screen and (min-width:768px) and (max-width:1850px) {
+    
+    .Containerdiaporama{
+        width: 100%;
+        position:static;
+    }
+   
+    .Containernosservices .imageettexte{
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        
+    }
+    .Containernosservices p{
+        width: 500px;
+        text-align: center;
+    }
+    .Containernosprojets p{
+        width: 500px;
+    }
+.Containernosprojets div{
+    width: 100%;
+   justify-content: space-between;
+    
+}
+.Containercontact{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.Containercontact div{
+    margin: 0;
+    justify-content:flex-end;
+}
+.Containercontact block{
+    height: 500px;
+}
+
+
+    
+    }
+
+
 @media screen and (max-width : 767px){
 header{
     height: 100px;
@@ -385,6 +428,9 @@ display: flex;
 flex-direction: column;
 margin-bottom: 10px;
 }
+.Containernosprojets ul{
+    width: 80%;
+}
 .Containercontact{
     height: 600px;
 }
@@ -413,11 +459,4 @@ margin-bottom: 10px;
 footer p{
     width: 300px;
     
-}
-
-
-@media screen and (min-width:768px) and (max-width:1850px) {
-.Containerdiaporama div{
-    margin: 0 auto;
-}
 }
